@@ -9,7 +9,11 @@ app.use(express.json());
 
 // Crear client de Redis
 const client = createClient({
-  *** Aquest codi l'heu de copiar i apegar de la secció de reddis connect de la teua DB ***
+  username: 'default',
+  password: '9g9sOEjVi6XPmyihvq7AjcVc3B8odlOa',
+  socket: {
+    host: 'redis-16979.c74.us-east-1-4.ec2.redns.redis-cloud.com',
+    port: 16979
   }
 });
 
