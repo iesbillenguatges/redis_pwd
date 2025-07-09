@@ -37,7 +37,7 @@
     const llista = document.getElementById("llista");
 
     const carregar = async () => {
-      const usuaris = await (await fetch("http://localhost:3000/usuaris")).json();
+      const usuaris = await (await fetch("*** URL del 3000 ***/usuaris")).json();
       llista.innerHTML = "";
       usuaris.forEach(u => {
         const li = document.createElement("li");
@@ -49,7 +49,7 @@
     formAlta.onsubmit = async e => {
       e.preventDefault();
       const data = Object.fromEntries(new FormData(formAlta));
-      await fetch("http://localhost:3000/alta", {
+      await fetch("*** URL del 3000 ***/alta", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -61,7 +61,7 @@
     formBaixa.onsubmit = async e => {
       e.preventDefault();
       const data = Object.fromEntries(new FormData(formBaixa));
-      await fetch("http://localhost:3000/baixa/" + data.user, { method: "DELETE" });
+      await fetch("*** URL del 3000 ***/baixa/" + data.user, { method: "DELETE" });
       formBaixa.reset();
       carregar();
     };
