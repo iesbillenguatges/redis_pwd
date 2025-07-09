@@ -21,4 +21,7 @@ $ git clone *** el present repositori ***
 $ cd redis_pwd
 $ docker-compose up --build
 ```
+Comproveu el port 3000 que funciona el backend, si es així (missatge -> API d'usuaris operativa. Fes GET a /usuaris per veure dades), copieu aquesta (la del port 3000) i editeu el index.html del frontend. Heu de canvia *** URL del 3000 *** per la copiada en els 3 llocs on apareix.
 
+Ctrl+c per a parar el server i docker-compose up --build de nou i:
+### A funcionar....!!!
